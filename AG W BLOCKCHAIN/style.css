@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+  background-image: url("img/dan-meyers-IQVFVH0ajag-unsplash.jpg"); /* Change this to your image path */
+  background-size: cover; /* Makes the image cover the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Ensures the background covers the full height of the viewport */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  /* color: #333; */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  color: rgba(37, 35, 35, 0.699);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Header Section */
+header {
+  height: 90vh;
+  background: url("https://source.unsplash.com/1600x900/?farm,crops") no-repeat
+    center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+header p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #198754;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0d6efd;
+}
+
+/* Section Styling */
+section {
+  background-image: url("img/dan-meyers-IQVFVH0ajag-unsplash.jpg");
+  padding: 60px 20px;
+  text-align: center;
+  /* background-color: #f4f4f4; */
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.block {
+  background-image: url("img/spencer-scott-pugh-uzDCTCx6GXE-unsplash.jpg");
+}
+
+/* Footer */
+footer {
+  background-image: url("img/spencer-scott-pugh-uzDCTCx6GXE-unsplash.jpg");
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #198754;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
